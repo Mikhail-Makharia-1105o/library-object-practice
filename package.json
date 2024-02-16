@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "http-server": "^14.1.1",
+    "readfilesync": "^1.1.5",
+    "readline-sync": "^1.4.10"
+  },
+  "name": "libraryobjectpractice",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Mikhail-Makharia-1105o/library-object-practice.git"
+  },
+  "type": "module",
+  "author": "SHRU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikhail-Makharia-1105o/library-object-practice/issues"
+  },
+  "homepage": "https://github.com/Mikhail-Makharia-1105o/library-object-practice#readme"
+}
