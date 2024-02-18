@@ -5,7 +5,7 @@ import viewBooks from './printbooks.js';
 
 function startCommandLibrary() {
     let exit = false;
-    console.log("Greetings, curious reader! \n Enter w to write a new book \n Enter v to view our catalogue \n Enter d to delete a book by its name \n Enter c if youou want to change an existing book \n Enter q to quit the program");
+    console.log("Greetings, curious reader! \n Enter w to write a new book \n Enter v to view our catalogue \n Enter d to delete a book by its name \n Enter c if you want to change an existing book \n Enter q to quit the program");
     switch(rds.question(': ')) {
         case "q":
             exit = true;
