@@ -2,6 +2,7 @@ import rds from "readline-sync";
 import makeAppendBook from "./makebook.js";
 import viewBooks from "./printbooks.js";
 import changeBooks from "./changebook.js";
+import deleteBook from "./deletebook.js";
 
 function startCommandLibrary() {
   let exit = false;
@@ -26,6 +27,9 @@ function startCommandLibrary() {
       break;
     case 'c':
       changeBooks();
+      break;
+    case 'd':
+      deleteBook();
       break;
     default:
       break;
