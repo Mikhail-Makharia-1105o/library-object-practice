@@ -34,7 +34,6 @@ export default function viewBooks() {
         }
         return -1;
       });
-      console.log(organizedArray);
       break;
     case "3":
       organizedArray.sort((a, b) => {
@@ -47,7 +46,6 @@ export default function viewBooks() {
         }
         return -1;
       });
-      console.log(organizedArray);
       break;
     default:
       break;

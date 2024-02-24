@@ -1,6 +1,7 @@
 import rds from "readline-sync";
 import makeAppendBook from "./makebook.js";
 import viewBooks from "./printbooks.js";
+import changeBooks from "./changebook.js";
 
 function startCommandLibrary() {
   let exit = false;
@@ -8,10 +9,10 @@ function startCommandLibrary() {
     "Greetings, curious reader! \n Enter w to write a new book \n Enter v to view our catalogue \n Enter d to delete a book by its name \n Enter c if you want to change an existing book \n Enter q to quit the program"
   );
   switch (rds.question(": ")) {
-    case "q":
+    case 'q':
       exit = true;
       break;
-    case "w":
+    case 'w':
       makeAppendBook(
         rds.question("Name: "),
         rds.question("Author: "),
@@ -20,8 +21,12 @@ function startCommandLibrary() {
         rds.question("Page count: ")
       );
       break;
-    case "v":
+    case 'v':
       viewBooks();
+      break;
+    case 'c':
+      changeBooks();
+      break;
     default:
       break;
   }
