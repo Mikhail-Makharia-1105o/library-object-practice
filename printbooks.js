@@ -21,7 +21,6 @@ export default function viewBooks() {
         }
         return -1;
       });
-      console.log(organizedArray);
       break;
     case "2":
       organizedArray.sort((a, b) => {
