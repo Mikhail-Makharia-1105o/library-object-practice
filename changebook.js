@@ -31,7 +31,7 @@ export default function changeBooks() {
     if (usAnswer && usAnswer === 'y') {
         const usChange = rds.question('What would you like changed? \n name \n author \n genre \n wordcount \n pagecount \n: ');
         const usValue = rds.question('Input the new value \n Value must be numerical for word count or page count \n: ');
-        if (usValue === undefined || usChange !== 'name' && usChange !== 'author' && usChange !== 'genre' && usChange !== 'wordcount' && usChange !== 'pagecount' || usChange === undefined) {
+        if (usValue || usChange !== 'name' && usChange !== 'author' && usChange !== 'genre' && usChange !== 'wordcount' && usChange !== 'pagecount' || usChange) {
             console.log('Input value is undefined or change keyword is missing / wrong.');
             console.log(usValue);
             console.log(usChange);
